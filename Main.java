@@ -1,5 +1,4 @@
 
-package javaapplication138;
 
 import java.util.ArrayList;
 import java.util.Scanner;
