@@ -1,8 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package javaapplication138;
+
 import java.time.LocalDate;
 
 public class BorrowRecord {
@@ -16,12 +12,10 @@ public class BorrowRecord {
     private LocalDate returnDate;
     private boolean returned;
 
-    // Default Constructor
     public BorrowRecord() {
 
     }
 
-    // Parameterized Constructor
     public BorrowRecord(String recordId, String memberId, String bookId,
                         LocalDate borrowDate, LocalDate dueDate,
                         LocalDate returnDate, boolean returned) {
@@ -124,7 +118,6 @@ public class BorrowRecord {
 
     }
 
-    // Used for saving data to file
     @Override
     public String toString() {
 
