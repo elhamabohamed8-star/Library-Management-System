@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package javaapplication138;
 
-/**
- *
- * @author YAHOO COMPUTER
- */
 import java.time.LocalDate;
 
 public class BorrowService {
@@ -26,7 +17,6 @@ public class BorrowService {
         Member member = null;
         Book book = null;
 
-        // Search for member
         for (Member m : library.getMembers()) {
             if (m.getMemberId().equalsIgnoreCase(memberId)) {
                 member = m;
@@ -34,7 +24,6 @@ public class BorrowService {
             }
         }
 
-        // Search for book
         for (Book b : library.getBooks()) {
             if (b.getBookId().equalsIgnoreCase(bookId)) {
                 book = b;
@@ -42,7 +31,6 @@ public class BorrowService {
             }
         }
 
-        // Validation
         if (member == null || book == null)
             return false;
 
@@ -52,7 +40,6 @@ public class BorrowService {
         if (!book.isAvailable())
             return false;
 
-        // Borrow
         member.borrowBook();
         book.borrowBook();
 
@@ -95,10 +82,8 @@ public class BorrowService {
         if (record.isReturned())
             return false;
 
-        // Return book
         record.returnBook();
 
-        // Update Book
         for (Book b : library.getBooks()) {
 
             if (b.getBookId().equals(record.getBookId())) {
@@ -108,7 +93,6 @@ public class BorrowService {
 
         }
 
-        // Update Member
         for (Member m : library.getMembers()) {
 
             if (m.getMemberId().equals(record.getMemberId())) {
