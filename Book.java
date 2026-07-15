@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package javaapplication138;
 
-/**
- *
- * @author YAHOO COMPUTER
- */
 public class Book {
     private String bookId;
     private String title;
@@ -18,12 +9,10 @@ public class Book {
     private String isbn;
     private boolean available;
 
-    // Default Constructor
     public Book() {
 
     }
 
-    // Parameterized Constructor
     public Book(String bookId, String title, String author,
                 String category, String publisher,
                 int publicationYear, String isbn,
@@ -133,7 +122,6 @@ public class Book {
 
     }
 
-    // Used for saving data to file
     @Override
     public String toString() {
 
