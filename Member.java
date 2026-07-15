@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package javaapplication138;
 
-/**
- *
- * @author YAHOO COMPUTER
- */
 public class Member {
 
     private String memberId;
@@ -17,12 +8,10 @@ public class Member {
     private String address;
     private int borrowedBooksCount;
 
-    // Default Constructor
     public Member() {
 
     }
 
-    // Parameterized Constructor
     public Member(String memberId, String fullName, String phoneNumber,
                   String email, String address, int borrowedBooksCount) {
 
@@ -117,7 +106,6 @@ public class Member {
 
     }
 
-    // Used for saving data to file
     @Override
     public String toString() {
 
