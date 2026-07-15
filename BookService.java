@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package javaapplication138;
 
-/**
- *
- * @author YAHOO COMPUTER
- */
 import java.util.ArrayList;
 
 public class BookService {
@@ -18,7 +9,6 @@ public class BookService {
         this.library = library;
     }
 
-    // Add Book
     public boolean addBook(Book book) {
 
         for (Book b : library.getBooks()) {
@@ -31,7 +21,6 @@ public class BookService {
         return true;
     }
 
-    // Remove Book
     public boolean removeBook(String id) {
 
         for (Book b : library.getBooks()) {
@@ -45,7 +34,6 @@ public class BookService {
         return false;
     }
 
-    // Search by ID
     public Book searchById(String id) {
 
         for (Book b : library.getBooks()) {
@@ -58,7 +46,6 @@ public class BookService {
         return null;
     }
 
-    // Search by Title
     public ArrayList<Book> searchByTitle(String title) {
 
         ArrayList<Book> result = new ArrayList<>();
@@ -73,7 +60,6 @@ public class BookService {
         return result;
     }
 
-    // Display Books
     public void displayBooks() {
 
         if (library.getBooks().isEmpty()) {
@@ -86,7 +72,6 @@ public class BookService {
         }
     }
 
-    // Borrow Book
     public boolean borrowBook(String id) {
 
         Book book = searchById(id);
@@ -101,7 +86,6 @@ public class BookService {
         return true;
     }
 
-    // Return Book
     public boolean returnBook(String id) {
 
         Book book = searchById(id);
