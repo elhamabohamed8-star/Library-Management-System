@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package javaapplication138;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * Library Management System - Console Application.
- *
- * @author YAHOO COMPUTER
- */
 public class JavaApplication138 {
 
     static Scanner input = new Scanner(System.in);
@@ -294,7 +286,6 @@ public class JavaApplication138 {
                     break;
 
                 case 5:
-                    // Back to main menu
                     break;
 
                 default:
@@ -438,7 +429,6 @@ public class JavaApplication138 {
                     break;
 
                 case 3:
-                    // Back to main menu
                     break;
 
                 default:
@@ -528,7 +518,6 @@ public class JavaApplication138 {
                 }
 
                 case 6:
-                    // Back to main menu
                     break;
 
                 default:
@@ -671,7 +660,6 @@ public class JavaApplication138 {
         FileManager.saveBorrowRecords(library.getBorrowRecords());
     }
 
-    // Reads an integer safely, re-prompting on invalid input
     private static int readInt(String prompt) {
 
         System.out.print(prompt);
@@ -682,11 +670,10 @@ public class JavaApplication138 {
         }
 
         int value = input.nextInt();
-        input.nextLine(); // consume newline
+        input.nextLine(); 
         return value;
     }
 
-    // Reads an integer and enforces it falls within [min, max]
     private static int readIntInRange(String prompt, int min, int max) {
 
         int value;
@@ -703,7 +690,6 @@ public class JavaApplication138 {
         return value;
     }
 
-    // Reads a non-empty line of text, re-prompting if left blank
     private static String readNonEmpty() {
 
         String value = input.nextLine().trim();
@@ -716,7 +702,6 @@ public class JavaApplication138 {
         return value;
     }
 
-    // Simple yes/no confirmation prompt
     private static boolean confirm(String prompt) {
 
         System.out.print(prompt);
@@ -725,7 +710,6 @@ public class JavaApplication138 {
         return answer.equals("y") || answer.equals("yes");
     }
 
-    // Pauses execution until the user presses Enter
     private static void pause() {
         System.out.print("\nPress Enter to continue...");
         input.nextLine();
