@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package javaapplication138;
 
-/**
- *
- * @author YAHOO COMPUTER
- */
 import java.io.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -18,8 +9,7 @@ public class FileManager {
     private static  String MEMBER_FILE = "members.txt";
     private static  String RECORD_FILE = "borrowRecords.txt";
 
-    // Returns the absolute path where data files are read/written,
-    // so the application can show the user exactly where to look.
+    
     public static String getDataFolderPath() {
         return new File(BOOK_FILE).getAbsoluteFile().getParent();
     }
